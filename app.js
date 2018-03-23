@@ -1,3 +1,4 @@
+/* TODO: Connect to GitHub API */
 const https = require('https');
 const options = {
     hostname: 'api.github.com',
@@ -8,9 +9,16 @@ const options = {
         'user-agent': 'nodejs'
     }
 }
+/* TODO: Read the Data */
+let request = https.request(options, (response) => {
 
-let request = https.request(options, (result) => {
-    console.log('Got Response: ', result.statusCode)
+    let body = ''
+response.on('data', (data) => {
+    body = body + data
+})
+response.on('end', () => {
+    console.log(body)
+})
 })
 
 request.end()

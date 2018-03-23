@@ -7,7 +7,7 @@ and print out to the console
 ## TODO
 * [x] connect to GitHub API
 
-* [ ] Read the data
+* [x] Read the data
 
 * [ ] Parse the data
 
