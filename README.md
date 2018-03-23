@@ -9,6 +9,6 @@ and print out to the console
 
 * [x] Read the data
 
-* [ ] Parse the data
+* [x] Parse the data
 
 * [ ] print out the data

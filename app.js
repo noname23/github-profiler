@@ -17,7 +17,11 @@ response.on('data', (data) => {
     body = body + data
 })
 response.on('end', () => {
-    console.log(body)
+
+    /*TODO: Parse the data*/
+    // Convert String to JSON (Javascript Object)
+    let profile = JSON.parse(body)
+    console.log(profile)
 })
 })
 
@@ -26,3 +30,4 @@ request.end()
 request.on('error', (e) => {
     console.error(e)
 })
+
