@@ -11,4 +11,4 @@ and print out to the console
 
 * [x] Parse the data
 
-* [ ] print out the data
+* [x] Print out the data
